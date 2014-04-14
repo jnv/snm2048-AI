@@ -39,7 +39,7 @@ body {
 }
 
 h1.title {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -297,6 +297,10 @@ hr {
 
   font-size: 55px;
 
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   @include transition($transition-speed ease-in-out);
   @include transition-property(top, left);
 
@@ -340,7 +344,8 @@ hr {
       }
 
       // Set background
-      background: $mixed-background;
+      background-color: $mixed-background;
+      background-image: url('../img/#{$power}.jpg');
 
       // Add glow
       $glow-opacity: max($exponent - 4, 0) / ($limit - 4);
@@ -449,7 +454,7 @@ hr {
   }
 
   h1.title {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .container {
